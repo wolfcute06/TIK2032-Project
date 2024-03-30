@@ -14,6 +14,30 @@
         color: black;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+    .menu1 a.active {
+        text-decoration: underline;
+    }
+    .menu1 a {
+        position: relative;
+        text-decoration: none;
+    }
+    .menu1 .active::after, 
+    .menu1 a:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    .menu1 a::after {
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
     .menu2 {
         position: absolute;
         right: 14%;
@@ -21,6 +45,30 @@
         font-size: 105%;
         color: black;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .menu2 a.active {
+        text-decoration: underline;
+    }
+    .menu2 a {
+        position: relative;
+        text-decoration: none;
+    }
+    .menu2 .active::after, 
+    .menu2 a:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    .menu2 a::after {
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
     }
     .menu3 {
         position: absolute;
@@ -30,6 +78,30 @@
         color: black;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+    .menu3 a.active {
+        text-decoration: underline;
+    }
+    .menu3 a {
+        position: relative;
+        text-decoration: none;
+    }
+    .menu3 .active::after, 
+    .menu3 a:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    .menu3 a::after {
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
     .menu4 {
         position: absolute;
         right: 2.5%;
@@ -37,6 +109,30 @@
         font-size: 105%;
         color: black;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .menu4 a.active {
+        text-decoration: underline;
+    }
+    .menu4 a {
+        position: relative;
+        text-decoration: none;
+    }
+    .menu4 .active::after, 
+    .menu4 a:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    .menu4 a::after {
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
     }
     .food {
         position: absolute;
@@ -83,6 +179,7 @@
 </style>
 </head>
 <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="menu1">
         <a href="index.html">Home</a>            
     </div>
