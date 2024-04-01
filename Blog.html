@@ -37,7 +37,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: black;
+        background-color: #f07167;
         visibility: visible;
         transform: scaleX(1);
     }
@@ -69,7 +69,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: black;
+        background-color: #f07167;
         visibility: visible;
         transform: scaleX(1);
     }
@@ -101,7 +101,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: black;
+        background-color: #f07167;
         visibility: visible;
         transform: scaleX(1);
     }
@@ -133,7 +133,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: black;
+        background-color: #f07167;
         visibility: visible;
         transform: scaleX(1);
     }
@@ -142,19 +142,65 @@
         transform: scaleX(0);
         transition: all 0.3s ease-in-out;
     }
-    .tech {
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+    }
+    a:hover {
+        color: #f07167;
+    }
+    .card1 {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 15%;
+        border-radius: 5px;
         position: absolute;
-        left: 25%;
-        top: 40%;
+        left: 23%;
+        top: 25%;
         color: black;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    .art {
+    .card1:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .card2 {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 15%;
+        border-radius: 5px;
         position: absolute;
-        left: 50%;
-        top: 40%;
+        left: 43%;
+        top: 25%;
         color: black;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card2:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .card3 {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 15%;
+        border-radius: 5px;
+        position: absolute;
+        right: 22%;
+        top: 25%;
+        color: black;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card3:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .container {
+        padding: 2px 16px;
+        text-align: center;
+    }
+    img {
+        border-radius: 5px 5px 0 0;
     }
     .food {
         position: absolute;
@@ -172,7 +218,24 @@
 </style>
 </head>
 <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="card1">
+        <img src="Images/cyber.jpeg" width="100%">
+        <div class="container">
+            <h4><a href="Teknologi.html">Teknologi</a></h4> 
+        </div>
+    </div>
+    <div class="card2">
+        <img src="Images/download (8).jpeg" width="100%">
+        <div class="container">
+            <h4><a href="Seni.html">Seni</a></h4> 
+        </div>
+    </div>
+    <div class="card3">
+        <img src="Images/download (9).jpeg" width="100%">
+        <div class="container">
+            <h4><a href="Makanan.html">Makanan</a></h4> 
+        </div>
+    </div>
     <div class="menu1">
         <a href="index.html">Home</a>            
     </div>
@@ -193,17 +256,6 @@
         <h1>Blog</h1>
     </div>
 
-    <div class="tech">
-        <h3><a href="Teknologi.html">Teknologi</a></h3>
-    </div>
-    
-    <div class="art">
-        <h3><a href="Seni.html">Seni</a></h3>
-    </div>
-
-    <div class="food">
-        <h3><a href="Makanan.html">Makanan</a></h3>
-    </div>
 </body>
 <footer>
     <div class="copyright">
