@@ -1,228 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Blog</title>
-<style>
-    body {
-        background-image: linear-gradient(to right, #00afb9, #fed9b7 );
-        }
-        .menu1 {
-        position: absolute;
-        right: 20%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu1 a.active {
-        text-decoration: underline;
-    }
-    .menu1 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu1 .active::after, 
-    .menu1 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu1 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    .menu2 {
-        position: absolute;
-        right: 14%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu2 a.active {
-        text-decoration: underline;
-    }
-    .menu2 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu2 .active::after, 
-    .menu2 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu2 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    .menu3 {
-        position: absolute;
-        right: 9%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu3 a.active {
-        text-decoration: underline;
-    }
-    .menu3 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu3 .active::after, 
-    .menu3 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu3 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    .menu4 {
-        position: absolute;
-        right: 2.5%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu4 a.active {
-        text-decoration: underline;
-    }
-    .menu4 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu4 .active::after, 
-    .menu4 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu4 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    li {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 1rem;
-    }
-    a:hover {
-        color: #f07167;
-    }
-    .food {
-        position: absolute;
-        right: 5%;
-        bottom: 18%;
-        font-size: smaller;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .tech {
-        position: absolute;
-        right: 5%;
-        bottom: 14%;
-        font-size: smaller;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .seni {
-        position: absolute;
-        left: 4%;
-        top: 10%;
-        font-size: larger;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .text {
-        position: absolute;
-        top: 16%;
-        text-indent: 50px;
-        text-align: justify;
-        margin: 20px 50px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .image {
-        position: absolute;
-        top: 35%;
-        left: 10%;
-    }
-    .copyright {
-        position: absolute;
-        right: 3%;
-        bottom: 2%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-</style>
+    <title>Seni</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seni.css">
 </head>
 <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="menu1">
-        <a href="index.html">Home</a>            
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class ="menu2">
-        <a href="Gallery.html">Gallery</a> 
-    </div>
-
-    <div class="menu3">
-        <a href="Blog.html">Blog</a> 
-    </div>
-
-    <div class="menu4">
-        <a href="Contact.html">Contact</a> 
-    </div>
-
-    <div class="tech">
-        <h3><a href="Teknologi.html">Teknologi</a></h3>
-    </div>
-
-    <div class="food">
-        <h3><a href="Makanan.html">Makanan</a></h3>
-    </div>
-
-    <div class="seni">
-        <h2>Seni</h2>
-    </div>
-
-    <div class="text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
+    <h2 class="seni">Seni</h2>
+    <h3 class="tech"><a href="Teknologi.html">Teknologi</a></h3>
+    <h3 class="food"><a href="Makanan.html">Makanan</a></h3>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
     <div class="image">
         <img src="Images/19th Century European, Victorian & British Impressionist Art at Bonhams London, New Bond Street.jpeg" weight="200" height="300">

@@ -3,209 +3,29 @@
 <head>
     <title>Homepage</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body {
-        background-image: linear-gradient(to right, #00afb9, #fed9b7 );
-    }
-    .welcome {
-        position: absolute;
-        top: 54%;
-        left: 2%;
-        font-size: 125%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .paragraph {
-        position: absolute;
-        top: 48%;
-        left: 2%;
-        font-size: 85%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    @media screen and (min-width: 200px) {
-    .welcome, .paragraph {
-        width: 90%; 
-        }
-    }
-    .menu1 {
-        position: absolute;
-        right: 20%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu1 a.active {
-        text-decoration: underline;
-    }
-    .menu1 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu1 .active::after, 
-    .menu1 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu1 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    .menu2 {
-        position: absolute;
-        right: 14%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu2 a.active {
-        text-decoration: underline;
-    }
-    .menu2 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu2 .active::after, 
-    .menu2 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu2 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    .menu3 {
-        position: absolute;
-        right: 9%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu3 a.active {
-        text-decoration: underline;
-    }
-    .menu3 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu3 .active::after, 
-    .menu3 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu3 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    .menu4 {
-        position: absolute;
-        right: 2.5%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu4 a.active {
-        text-decoration: underline;
-    }
-    .menu4 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu4 .active::after, 
-    .menu4 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu4 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    li {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 1rem;
-    }
-    a:hover {
-        color: #f07167;
-    }
-    @media only screen and (min-width: 600px) {
-    .welcome, .paragraph {
-        width: 90%; 
-        }
-    }
-    .copyright {
-        position: absolute;
-        right: 3%;
-        bottom: 2%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-</style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
-    <div class="welcome">
-        <h1>Welcome to my personal website</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="content">
+    <div class="s-container">
+        <div class="content">
+            <span class="paragraph">Hi! I'm Sabina Massie<br> an Informatics Student at Sam Ratulangi University Manado</h2>
+            <h1 class="welcome">Welcome to my personal website</h1>
+        </div>
     </div>
-
-    <div class="paragraph">
-        <h2>Hi! I'm Sabina Massie<br> an Informatics Student at Sam Ratulangi University</h2>
-    </div>
-
-    <div class="menu1">
-        <a href="index.html">Home</a>            
-    </div>
-
-    <div class ="menu2">
-        <a href="Gallery.html">Gallery</a> 
-    </div>
-
-    <div class="menu3">
-        <a href="Blog.html">Blog</a> 
-    </div>
-
-    <div class="menu4">
-        <a href="Contact.html">Contact</a> 
-    </div>
-
+</section>
 </body>
 <footer>
     <div class="copyright">

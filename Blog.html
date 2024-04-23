@@ -2,226 +2,27 @@
 <html lang="en">
 <head>
     <title>Blog</title>
-<style>
-    body {
-        background-image: linear-gradient(to right, #00afb9, #fed9b7 );
-        }
-    .blog {
-        position: absolute;
-        top: 83%;
-        left: 14%;
-        transform: translate(-50%,-50%);
-        font-size: 150%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu1 {
-        position: absolute;
-        right: 20%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu1 a.active {
-        text-decoration: underline;
-    }
-    .menu1 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu1 .active::after, 
-    .menu1 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu1 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    .menu2 {
-        position: absolute;
-        right: 14%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu2 a.active {
-        text-decoration: underline;
-    }
-    .menu2 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu2 .active::after, 
-    .menu2 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu2 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    .menu3 {
-        position: absolute;
-        right: 9%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu3 a.active {
-        text-decoration: underline;
-    }
-    .menu3 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu3 .active::after, 
-    .menu3 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu3 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    .menu4 {
-        position: absolute;
-        right: 2.5%;
-        top: 5%;
-        font-size: 105%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .menu4 a.active {
-        text-decoration: underline;
-    }
-    .menu4 a {
-        position: relative;
-        text-decoration: none;
-    }
-    .menu4 .active::after, 
-    .menu4 a:hover::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #f07167;
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    .menu4 a::after {
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
-    }
-    li {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 1rem;
-    }
-    a:hover {
-        color: #f07167;
-    }
-    .card1 {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        width: 15%;
-        border-radius: 5px;
-        position: absolute;
-        left: 23%;
-        top: 25%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .card1:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-    .card2 {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        width: 15%;
-        border-radius: 5px;
-        position: absolute;
-        left: 43%;
-        top: 25%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .card2:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-    .card3 {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        width: 15%;
-        border-radius: 5px;
-        position: absolute;
-        right: 22%;
-        top: 25%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .card3:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-    .container {
-        padding: 2px 16px;
-        text-align: center;
-    }
-    img {
-        border-radius: 5px 5px 0 0;
-    }
-    .food {
-        position: absolute;
-        right: 25%;
-        top: 40%;
-        color: black;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .copyright {
-        position: absolute;
-        right: 3%;
-        bottom: 2%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <h1>Blog</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
     <div class="card1">
         <img src="Images/cyber.jpeg" width="100%">
         <div class="container">
-            <h4><a href="Teknologi.html">Teknologi</a></h4> 
+            <h4><a href="Teknologi.html">Teknologi</a></h4>
         </div>
     </div>
     <div class="card2">
@@ -235,25 +36,6 @@
         <div class="container">
             <h4><a href="Makanan.html">Makanan</a></h4> 
         </div>
-    </div>
-    <div class="menu1">
-        <a href="index.html">Home</a>            
-    </div>
-
-    <div class ="menu2">
-        <a href="Gallery.html">Gallery</a> 
-    </div>
-
-    <div class="menu3">
-        <a href="Blog.html">Blog</a> 
-    </div>
-
-    <div class="menu4">
-        <a href="Contact.html">Contact</a> 
-    </div>
-    
-    <div class="blog">
-        <h1>Blog</h1>
     </div>
 
 </body>
